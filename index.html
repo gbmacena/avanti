@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avanti - Loja Online</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="min-h-screen">
+    <!-- Banner de desconto -->
+    <div class="w-full bg-blue-600 text-white text-center py-2 text-sm">
+      Ganhe R$10.00 de desconto no seu primeiro pedido. Utilize o cupom
+      <span class="font-bold">DESCONTO10</span>
+    </div>
+
+    <!-- Header -->
+    <header
+      class="container mx-auto px-4 py-4 flex items-center justify-between"
+    >
+      <div class="flex items-center space-x-8">
+        <!-- Logo -->
+        <h1 class="text-2xl font-bold">AVANTI</h1>
+
+        <!-- Menu de categorias (visível apenas em desktop) -->
+        <div class="hidden md:flex items-center">
+          <button class="flex items-center space-x-2">
+            <i class="fas fa-bars"></i>
+            <span>Todas as Categorias</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Barra de pesquisa -->
+      <div class="hidden md:flex relative flex-1 max-w-md mx-4">
+        <input
+          type="text"
+          placeholder="Digite aqui o que você procura"
+          class="w-full border border-gray-300 rounded-md py-2 px-4 pr-10"
+        />
+        <button class="absolute right-2 top-1/2 transform -translate-y-1/2">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+
+      <!-- Ícones de usuário e carrinho -->
+      <div class="flex items-center space-x-4">
+        <div class="hidden md:block text-right">
+          <div class="text-sm">Olá,</div>
+          <div class="text-sm font-semibold">Nome cliente!</div>
+        </div>
+        <div class="relative">
+          <i class="fas fa-shopping-cart text-xl"></i>
+          <span
+            class="absolute -top-2 -right-2 bg-blue-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center"
+          >
+            2
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Menu de navegação -->
+    <nav class="border-b border-t border-gray-200">
+      <div class="container mx-auto px-4 overflow-x-auto">
+        <ul class="flex space-x-6 py-3 whitespace-nowrap">
+          <li class="font-medium">Departamento</li>
+          <li class="font-medium">Departamento</li>
+          <li class="font-medium">Departamento</li>
+          <li class="font-medium">Departamento</li>
+          <li class="font-medium">Departamento</li>
+          <li class="font-medium">Departamento</li>
+          <li class="font-medium">Departamento</li>
+          <li class="font-medium">Departamento</li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Banner principal -->
+    <section class="bg-gray-100 py-12">
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row items-center"
+      >
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <img
+            src="https://placehold.co/600x400"
+            alt="Roupas dobradas em uma cadeira"
+            class="rounded-md w-full"
+          />
+        </div>
+        <div class="md:w-1/2 md:pl-12">
+          <h2 class="text-5xl font-bold">
+            <span class="text-black">SUPER</span>
+            <span class="text-gray-500">SALE</span>
+          </h2>
+          <p class="text-blue-600 font-medium mt-6 mb-2">
+            ITENS SELECIONADOS COM ATÉ
+          </p>
+          <p class="text-blue-600 text-5xl font-bold">50%OFF</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de lançamentos -->
+    <section class="container mx-auto px-4 py-12">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-2xl font-bold">Lançamentos</h2>
+        <a href="#" class="text-sm text-gray-600 hover:underline">Ver mais</a>
+      </div>
+
+      <!-- Carrossel de produtos -->
+      <div class="relative" id="product-carousel">
+        <!-- Botão de navegação esquerdo -->
+        <button
+          id="prev-btn"
+          class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full p-2 shadow-md opacity-50 cursor-not-allowed"
+          disabled
+        >
+          <i class="fas fa-chevron-left text-xl"></i>
+        </button>
+
+        <!-- Carrossel -->
+        <div
+          id="carousel-container"
+          class="flex overflow-x-auto gap-4 pb-4 scrollbar-hide"
+          style="scroll-behavior: smooth"
+        >
+          <!-- Os produtos serão inseridos aqui via JavaScript -->
+        </div>
+
+        <!-- Botão de navegação direito -->
+        <button
+          id="next-btn"
+          class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full p-2 shadow-md"
+        >
+          <i class="fas fa-chevron-right text-xl"></i>
+        </button>
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -5,33 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Avanti - Loja Online</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style type="text/tailwindcss"></style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="min-h-screen">
     <div class="w-full bg-blue-600 text-white text-center py-2 text-sm">
       Ganhe <span class="bg-purple-700 font-bold px-1">R$10.00</span> de
       desconto no seu primeiro pedido. Utilize o cupom
-      <span class="font-bold">DESCONTO10</span>
+      <span class="font-light">DESCONTO10</span>
     </div>
 
     <header class="container mx-auto px-4 py-4 flex w-full">
       <div class="flex items-center w-full">
         <img src="assets/logo_avanti.png" class="w-[150px]" alt="logo" />
-
         <div class="flex mx-4 w-full">
           <input
             type="text"
             placeholder="Digite aqui o que você procura"
             class="w-[620px] border border-gray-300 rounded-lg py-2 px-4 pr-10 ml-[70px]"
           />
-          <i class="fas fa-search relative top-4 right-[40px]"></i>
+          <i class="fas fa-search relative top-3 right-[40px]"></i>
         </div>
       </div>
-
       <div class="flex items-center">
         <div class="flex items-center">
           <img
@@ -46,7 +48,6 @@
             </p>
           </div>
         </div>
-
         <div class="relative">
           <img src="assets/Group.png" alt="" />
           <span
@@ -110,6 +111,103 @@
         <h2 class="text-2xl font-bold">Lançamentos</h2>
         <a href="#" class="text-md text-gray-600 hover:underline">Ver mais</a>
       </div>
+      <div class="relative">
+        <div class="swiper product-swiper">
+          <div class="swiper-wrapper" id="swiper-slides-container"></div>
+        </div>
+
+        <div
+          class="custom-swiper-button-prev absolute left-[-15px] top-1/2 transform -translate-y-1/2 z-10 bg-white w-[30px] h-[30px] flex items-center justify-center rounded-full shadow-md border border-blue-600 text-blue-600"
+        >
+          <i class="fa-solid fa-arrow-left text-sm"></i>
+        </div>
+        <div
+          class="custom-swiper-button-next absolute right-[-15px] top-1/2 transform -translate-y-1/2 z-10 bg-white w-[30px] h-[30px] flex items-center justify-center rounded-full shadow-md border border-blue-600 text-blue-600"
+        >
+          <i class="fa-solid fa-arrow-right text-sm"></i>
+        </div>
+      </div>
+      <div class="custom-swiper-pagination mt-4 flex justify-center"></div>
     </section>
+    <section class="flex align-middle justify-center mb-1 0 h-[750px] w-full">
+      <div class="bg-[#c2c2c2] flex justify-center items-center">
+        <img src="assets/Free_Mug_Mockup_2.png" class="p-10" alt="" />
+      </div>
+      <div
+        class="w-[487px] ml-10 flex flex-col text-[18px] leading-[140%] tracking-7 gap-6 justify-center"
+      >
+        <h1 class="font-bold text-[30px] uppercase">Lorem Ipsum</h1>
+        <p>
+          Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+          finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur
+          volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra
+          magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor
+          tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla
+          magna consequat interdum. Fusce sagittis elit a libero commodo egestas
+          efficitur id augue.
+        </p>
+        <p>
+          Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+          finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur
+          volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra
+          magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor
+          tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla
+          magna consequat interdum. Fusce sagittis elit a libero commodo egestas
+          efficitur id augue.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="w-full bg-[#dedede] my-12 h-[819px] flex justify-center items-center"
+    >
+      <div class="mr-20 text-center text-[#4F4F4F] text-bold">
+        <h1 class="uppercase text-[30px]">Lorem ipsum</h1>
+        <div class="text-left flex flex-col text-[18px] gap-9 mt-6">
+          <div class="flex justfy-center items-center">
+            <span
+              class="bg-blue-600 w-20 h-20 rounded-full mr-5 flex items-center justify-center"
+            >
+              <img src="assets/map-pin.png" alt="" class="w-10 h-10" />
+            </span>
+            <p class="w-[340px]">
+              Aenean massa. Cum sociis natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. Donec quam felis,
+              ultricies nec, pellentesque eu, pretium quis, sem.
+            </p>
+          </div>
+          <div class="flex justfy-center items-center">
+            <span
+              class="bg-blue-600 w-20 h-20 rounded-full mr-4 flex items-center justify-center"
+            >
+              <img src="assets/map-pin.png" alt="" class="w-10 h-10" />
+            </span>
+            <p class="w-[340px]">
+              Aenean massa. Cum sociis natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. Donec quam felis,
+              ultricies nec, pellentesque eu, pretium quis, sem.
+            </p>
+          </div>
+          <div class="flex justfy-center items-center">
+            <span
+              class="bg-blue-600 w-20 h-20 rounded-full mr-4 flex items-center justify-center"
+            >
+              <img src="assets/map-pin.png" alt="" class="w-10 h-10" />
+            </span>
+            <p class="w-[340px]">
+              Aenean massa. Cum sociis natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. Donec quam felis,
+              ultricies nec, pellentesque eu, pretium quis, sem.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <img src="assets/segundo banner copy.png" class="h-[728px]" alt="" />
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script/index.js"></script>
   </body>
 </html>

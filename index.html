@@ -24,7 +24,13 @@
 
     <header class="container mx-auto px-4 py-4 flex w-full">
       <div class="flex items-center w-full">
-        <img src="assets/logos/logo.png" class="w-[150px]" alt="logo" />
+        <a href="/" class="inline-block">
+          <img
+            src="assets/logos/logo.png"
+            class="w-[150px]"
+            alt="Avanti - Voltar para página inicial"
+          />
+        </a>
         <div class="flex mx-4 w-full">
           <input
             type="text"
@@ -39,7 +45,7 @@
           <img
             src="assets/icons/icon-user.png"
             class="mr-2 w-[20px] h-[24px]"
-            alt="person"
+            alt="Pessoa"
           />
           <div class="mr-2">
             <p class="text-sm leading-tight w-32">
@@ -49,7 +55,7 @@
           </div>
         </div>
         <div class="relative">
-          <img src="assets/icons/icon-cart.png" alt="" />
+          <img src="assets/icons/icon-cart.png" alt="Carrinho" />
           <span
             class="absolute -top-2 -right-2 bg-blue-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center"
           >
@@ -63,285 +69,313 @@
       <div class="container mx-auto px-4">
         <ul class="flex w-full justify-between py-3 whitespace-nowrap">
           <li class="flex items-center font-medium">
-            <i class="fas fa-bars mr-2"></i>
-            <span>Todas as Categorias</span>
+            <i class="fas fa-bars mr-2" aria-hidden="true"></i>
+            <a href="#todas-categorias" class="hover:underline"
+              >Todas as Categorias</a
+            >
           </li>
-          <li>Departamento</li>
-          <li>Departamento</li>
-          <li>Departamento</li>
-          <li>Departamento</li>
-          <li>Departamento</li>
-          <li>Departamento</li>
-          <li>Departamento</li>
-          <li>Departamento</li>
+          <li>
+            <a class="hover:underline">Departamento</a>
+          </li>
+          <li>
+            <a class="hover:underline">Departamento</a>
+          </li>
+          <li>
+            <a class="hover:underline">Departamento</a>
+          </li>
+          <li>
+            <a class="hover:underline">Departamento</a>
+          </li>
+          <li>
+            <a class="hover:underline">Departamento</a>
+          </li>
+          <li>
+            <a class="hover:underline">Departamento</a>
+          </li>
+          <li>
+            <a class="hover:underline">Departamento</a>
+          </li>
+          <li>
+            <a class="hover:underline">Departamento</a>
+          </li>
         </ul>
       </div>
     </nav>
 
-    <section class="h-[510px] bg-[#e7e7ea] mt-4">
-      <div class="container mx-auto flex flex-row items-center">
-        <div class="md:w-1/2 mb-8 md:mb-0">
-          <img
-            src="assets/banners/banner-super-sale.png"
-            alt="Roupas dobradas em uma cadeira"
-            class="w-full h-[510px]"
-          />
+    <main>
+      <section class="h-[510px] bg-[#e7e7ea] mt-4">
+        <div class="container mx-auto flex flex-row items-center">
+          <div class="md:w-1/2 mb-8 md:mb-0">
+            <img
+              src="assets/banners/banner-super-sale.png"
+              alt="Roupas dobradas em uma cadeira"
+              class="w-full h-[510px]"
+            />
+          </div>
+          <div class="md:w-1/2 md:pl-12">
+            <h2 class="text-6xl font-bold">
+              <span class="text-black text-[100px]">SUPER</span>
+              <span class="font-light text-[100px]">SALE</span>
+            </h2>
+            <p
+              class="text-blue-600 font-medium mt-2 text-[25px] text-bold tracking-[7px] mb-2"
+            >
+              ITENS SELECIONADOS COM ATÉ
+            </p>
+            <p
+              class="text-blue-600 text-6xl font-bold text-center text-[60px] relative right-16"
+            >
+              50%OFF
+            </p>
+          </div>
         </div>
-        <div class="md:w-1/2 md:pl-12">
-          <h2 class="text-6xl font-bold">
-            <span class="text-black text-[100px]">SUPER</span>
-            <span class="font-light text-[100px]">SALE</span>
-          </h2>
-          <p
-            class="text-blue-600 font-medium mt-2 text-[25px] text-bold tracking-[7px] mb-2"
+      </section>
+
+      <section class="container mx-auto py-12">
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-2xl font-bold">Lançamentos</h2>
+          <a
+            href="#"
+            class="text-md text-gray-600 hover:text-blue-600 hover:underline transition-colors"
+            >Ver mais</a
           >
-            ITENS SELECIONADOS COM ATÉ
-          </p>
-          <p
-            class="text-blue-600 text-6xl font-bold text-center text-[60px] relative right-16"
-          >
-            50%OFF
-          </p>
         </div>
-      </div>
-    </section>
-
-    <section class="container mx-auto py-12">
-      <div class="flex justify-between items-center mb-6">
-        <h2 class="text-2xl font-bold">Lançamentos</h2>
-        <a
-          href="#"
-          class="text-md text-gray-600 hover:text-blue-600 hover:underline transition-colors"
-          >Ver mais</a
-        >
-      </div>
-      <div class="relative">
-        <div class="swiper product-swiper">
-          <div class="swiper-wrapper" id="swiper-slides-container"></div>
-        </div>
-
-        <div
-          class="custom-swiper-button-prev absolute left-[-15px] top-1/2 transform -translate-y-1/2 z-10 bg-white w-[30px] h-[30px] flex items-center justify-center rounded-full shadow-md border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-colors duration-500"
-        >
-          <i class="fa-solid fa-arrow-left text-sm"></i>
-        </div>
-        <div
-          class="custom-swiper-button-next absolute right-[-15px] top-1/2 transform -translate-y-1/2 z-10 bg-white w-[30px] h-[30px] flex items-center justify-center rounded-full shadow-md border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-colors duration-500"
-        >
-          <i class="fa-solid fa-arrow-right text-sm"></i>
-        </div>
-      </div>
-      <div class="custom-swiper-pagination mt-4 flex justify-center"></div>
-    </section>
-
-    <section class="flex align-middle justify-center mb-1 0 h-[750px] w-full">
-      <div class="bg-[#c2c2c2] flex justify-center items-center">
-        <img src="assets/banners/banner-mug.png" class="p-10" alt="" />
-      </div>
-      <div
-        class="w-[487px] ml-10 flex flex-col text-[18px] leading-[140%] tracking-7 gap-6 justify-center"
-      >
-        <h1 class="font-bold text-[30px] uppercase">Lorem Ipsum</h1>
-        <p>
-          Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
-          finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur
-          volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra
-          magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor
-          tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla
-          magna consequat interdum. Fusce sagittis elit a libero commodo egestas
-          efficitur id augue.
-        </p>
-        <p>
-          Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
-          finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur
-          volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra
-          magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor
-          tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla
-          magna consequat interdum. Fusce sagittis elit a libero commodo egestas
-          efficitur id augue.
-        </p>
-      </div>
-    </section>
-
-    <section
-      class="w-full bg-[#dedede] my-12 h-[819px] flex justify-center items-center"
-    >
-      <div class="mr-20 text-center text-[#4F4F4F] text-bold">
-        <h1 class="uppercase text-[30px]">Lorem ipsum</h1>
-        <div class="text-left flex flex-col text-[18px] gap-9 mt-6">
-          <div class="flex justfy-center items-center">
-            <span
-              class="bg-blue-600 w-20 h-20 rounded-full mr-5 flex items-center justify-center"
-            >
-              <img
-                src="assets/icons/icon-map-pin.png"
-                alt=""
-                class="w-10 h-10"
-              />
-            </span>
-            <p class="w-[340px]">
-              Aenean massa. Cum sociis natoque penatibus et magnis dis
-              parturient montes, nascetur ridiculus mus. Donec quam felis,
-              ultricies nec, pellentesque eu, pretium quis, sem.
-            </p>
+        <div class="relative">
+          <div class="swiper product-swiper">
+            <div class="swiper-wrapper" id="swiper-slides-container"></div>
           </div>
-          <div class="flex justfy-center items-center">
-            <span
-              class="bg-blue-600 w-20 h-20 rounded-full mr-4 flex items-center justify-center"
-            >
-              <img
-                src="assets/icons/icon-map-pin.png"
-                alt=""
-                class="w-10 h-10"
-              />
-            </span>
-            <p class="w-[340px]">
-              Aenean massa. Cum sociis natoque penatibus et magnis dis
-              parturient montes, nascetur ridiculus mus. Donec quam felis,
-              ultricies nec, pellentesque eu, pretium quis, sem.
-            </p>
-          </div>
-          <div class="flex justfy-center items-center">
-            <span
-              class="bg-blue-600 w-20 h-20 rounded-full mr-4 flex items-center justify-center"
-            >
-              <img
-                src="assets/icons/icon-map-pin.png"
-                alt=""
-                class="w-10 h-10"
-              />
-            </span>
-            <p class="w-[340px]">
-              Aenean massa. Cum sociis natoque penatibus et magnis dis
-              parturient montes, nascetur ridiculus mus. Donec quam felis,
-              ultricies nec, pellentesque eu, pretium quis, sem.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="">
-        <img
-          src="assets/banners/banner-secondary.png"
-          class="h-[728px]"
-          alt=""
-        />
-      </div>
-    </section>
 
-    <section class="flex align-middle justify-center mb-10 h-[750px] w-full">
-      <div class="bg-[#c2c2c2] flex justify-center items-center">
-        <img src="assets/banners/banner-mug.png" class="p-10" alt="" />
-      </div>
-      <div
-        class="w-[487px] ml-10 flex flex-col text-[18px] leading-[140%] tracking-7 gap-6 justify-center"
-      >
-        <h1 class="font-bold text-[30px] uppercase">Lorem Ipsum</h1>
-        <p>
-          Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
-          finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur
-          volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra
-          magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor
-          tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla
-          magna consequat interdum. Fusce sagittis elit a libero commodo egestas
-          efficitur id augue.
-        </p>
-        <p>
-          Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
-          finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur
-          volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra
-          magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor
-          tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla
-          magna consequat interdum. Fusce sagittis elit a libero commodo egestas
-          efficitur id augue.
-        </p>
-      </div>
-    </section>
-
-    <section class="container mx-auto py-12">
-      <div class="flex justify-between items-center mb-6">
-        <h2 class="text-2xl font-bold">Lançamentos</h2>
-        <a
-          href="#"
-          class="text-md text-gray-600 hover:text-blue-600 hover:underline transition-colors"
-          >Ver mais</a
-        >
-      </div>
-      <div class="relative">
-        <div class="swiper another-swiper">
           <div
-            class="swiper-wrapper"
-            id="another-swiper-slides-container"
-          ></div>
-        </div>
-
-        <div
-          class="custom-swiper-button-prev absolute left-[-15px] top-1/2 transform -translate-y-1/2 z-10 bg-white w-[30px] h-[30px] flex items-center justify-center rounded-full shadow-md border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-colors duration-500"
-        >
-          <i class="fa-solid fa-arrow-left text-sm"></i>
-        </div>
-        <div
-          class="custom-swiper-button-next absolute right-[-15px] top-1/2 transform -translate-y-1/2 z-10 bg-white w-[30px] h-[30px] flex items-center justify-center rounded-full shadow-md border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-colors duration-500"
-        >
-          <i class="fa-solid fa-arrow-right text-sm"></i>
-        </div>
-      </div>
-      <div class="custom-swiper-pagination-2 mt-4 flex justify-center"></div>
-    </section>
-
-    <section class="w-full h-[660px] relative mb-20">
-      <img
-        src="assets/banners/banner-room-avanti.png"
-        alt=""
-        class="w-full h-full object-cover"
-      />
-      <div class="absolute inset-0 flex items-center justify-center">
-        <div
-          class="h-[132px] w-full bg-blue-600 text-white text-[30px] flex items-center justify-center"
-        >
-          <span
-            >Entre em contato conosco e verifique a disponibilidade para sua
-            região!</span
+            class="custom-swiper-button-prev absolute left-[-15px] top-1/2 transform -translate-y-1/2 z-10 bg-white w-[30px] h-[30px] flex items-center justify-center rounded-full shadow-md border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-colors duration-500"
           >
-        </div>
-      </div>
-    </section>
-
-    <section class="w-full flex flex-col justify-center items-center">
-      <h1 class="text-[20px] font-bold mb-4">
-        Cadastre-se na nossa
-        <span class="text-blue-600 font-bold">newsletter</span>
-      </h1>
-      <div
-        class="max-w-[1260px] h-[176px] w-full bg-[#dedede] mt-3 mb-10 py-8 px-4 rounded-md flex justify-center items-center"
-      >
-        <form
-          class="w-full max-w-3xl flex items-center gap-4 justify-center flex-nowrap"
-        >
-          <input
-            type="text"
-            placeholder="Digite seu nome"
-            class="flex-1 w-[280px] px-4 py-3 rounded-md border-0"
-          />
-          <input
-            type="email"
-            placeholder="Digite seu e-mail"
-            class="flex-1 w-[280px] px-4 py-3 rounded-md border-0"
-          />
-          <div class="flex items-center gap-2">
-            <input type="checkbox" id="privacy-policy" class="h-4 w-4" />
-            <label for="privacy-policy" class="text-sm w-[296px]">
-              Estou de acordo com a Política de Privacidade
-            </label>
+            <i class="fa-solid fa-arrow-left text-sm"></i>
           </div>
-          <button
-            type="submit"
-            class="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition-colors"
+          <div
+            class="custom-swiper-button-next absolute right-[-15px] top-1/2 transform -translate-y-1/2 z-10 bg-white w-[30px] h-[30px] flex items-center justify-center rounded-full shadow-md border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-colors duration-500"
           >
-            Cadastrar
-          </button>
-        </form>
-      </div>
-    </section>
+            <i class="fa-solid fa-arrow-right text-sm"></i>
+          </div>
+        </div>
+        <div class="custom-swiper-pagination mt-4 flex justify-center"></div>
+      </section>
+
+      <section class="flex align-middle justify-center mb-1 0 h-[750px] w-full">
+        <div class="bg-[#c2c2c2] flex justify-center items-center">
+          <img
+            src="assets/banners/banner-mug.png"
+            class="p-10"
+            alt="Caneca avanti"
+          />
+        </div>
+        <div
+          class="w-[487px] ml-10 flex flex-col text-[18px] leading-[140%] tracking-7 gap-6 justify-center"
+        >
+          <h1 class="font-bold text-[30px] uppercase">Lorem Ipsum</h1>
+          <p>
+            Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+            finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
+            efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+            lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+            fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod
+            orci, auctor fringilla magna consequat interdum. Fusce sagittis elit
+            a libero commodo egestas efficitur id augue.
+          </p>
+          <p>
+            Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+            finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
+            efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+            lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+            fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod
+            orci, auctor fringilla magna consequat interdum. Fusce sagittis elit
+            a libero commodo egestas efficitur id augue.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="w-full bg-[#dedede] my-12 h-[819px] flex justify-center items-center"
+      >
+        <div class="mr-20 text-center text-[#4F4F4F] text-bold">
+          <h1 class="uppercase text-[30px]">Lorem ipsum</h1>
+          <div class="text-left flex flex-col text-[18px] gap-9 mt-6">
+            <div class="flex justfy-center items-center">
+              <span
+                class="bg-blue-600 w-20 h-20 rounded-full mr-5 flex items-center justify-center"
+              >
+                <img
+                  src="assets/icons/icon-map-pin.png"
+                  alt="Pin"
+                  class="w-10 h-10"
+                />
+              </span>
+              <p class="w-[340px]">
+                Aenean massa. Cum sociis natoque penatibus et magnis dis
+                parturient montes, nascetur ridiculus mus. Donec quam felis,
+                ultricies nec, pellentesque eu, pretium quis, sem.
+              </p>
+            </div>
+            <div class="flex justfy-center items-center">
+              <span
+                class="bg-blue-600 w-20 h-20 rounded-full mr-4 flex items-center justify-center"
+              >
+                <img
+                  src="assets/icons/icon-map-pin.png"
+                  alt="Pin"
+                  class="w-10 h-10"
+                />
+              </span>
+              <p class="w-[340px]">
+                Aenean massa. Cum sociis natoque penatibus et magnis dis
+                parturient montes, nascetur ridiculus mus. Donec quam felis,
+                ultricies nec, pellentesque eu, pretium quis, sem.
+              </p>
+            </div>
+            <div class="flex justfy-center items-center">
+              <span
+                class="bg-blue-600 w-20 h-20 rounded-full mr-4 flex items-center justify-center"
+              >
+                <img
+                  src="assets/icons/icon-map-pin.png"
+                  alt="Pin"
+                  class="w-10 h-10"
+                />
+              </span>
+              <p class="w-[340px]">
+                Aenean massa. Cum sociis natoque penatibus et magnis dis
+                parturient montes, nascetur ridiculus mus. Donec quam felis,
+                ultricies nec, pellentesque eu, pretium quis, sem.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <img
+            src="assets/banners/banner-secondary.png"
+            class="h-[728px]"
+            alt="Caneca em uma mesa"
+          />
+        </div>
+      </section>
+
+      <section class="flex align-middle justify-center mb-10 h-[750px] w-full">
+        <div class="bg-[#c2c2c2] flex justify-center items-center">
+          <img
+            src="assets/banners/banner-mug.png"
+            class="p-10"
+            alt="Caneca avanti"
+          />
+        </div>
+        <div
+          class="w-[487px] ml-10 flex flex-col text-[18px] leading-[140%] tracking-7 gap-6 justify-center"
+        >
+          <h1 class="font-bold text-[30px] uppercase">Lorem Ipsum</h1>
+          <p>
+            Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+            finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
+            efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+            lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+            fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod
+            orci, auctor fringilla magna consequat interdum. Fusce sagittis elit
+            a libero commodo egestas efficitur id augue.
+          </p>
+          <p>
+            Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+            finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
+            efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+            lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+            fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod
+            orci, auctor fringilla magna consequat interdum. Fusce sagittis elit
+            a libero commodo egestas efficitur id augue.
+          </p>
+        </div>
+      </section>
+
+      <section class="container mx-auto py-12">
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-2xl font-bold">Lançamentos</h2>
+          <a
+            href="#"
+            class="text-md text-gray-600 hover:text-blue-600 hover:underline transition-colors"
+            >Ver mais</a
+          >
+        </div>
+        <div class="relative">
+          <div class="swiper another-swiper">
+            <div
+              class="swiper-wrapper"
+              id="another-swiper-slides-container"
+            ></div>
+          </div>
+
+          <div
+            class="custom-swiper-button-prev absolute left-[-15px] top-1/2 transform -translate-y-1/2 z-10 bg-white w-[30px] h-[30px] flex items-center justify-center rounded-full shadow-md border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-colors duration-500"
+          >
+            <i class="fa-solid fa-arrow-left text-sm"></i>
+          </div>
+          <div
+            class="custom-swiper-button-next absolute right-[-15px] top-1/2 transform -translate-y-1/2 z-10 bg-white w-[30px] h-[30px] flex items-center justify-center rounded-full shadow-md border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-colors duration-500"
+          >
+            <i class="fa-solid fa-arrow-right text-sm"></i>
+          </div>
+        </div>
+        <div class="custom-swiper-pagination-2 mt-4 flex justify-center"></div>
+      </section>
+
+      <section class="w-full h-[660px] relative mb-20">
+        <img
+          src="assets/banners/banner-room-avanti.png"
+          alt="Quarto avanti"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div
+            class="h-[132px] w-full bg-blue-600 text-white text-[30px] flex items-center justify-center"
+          >
+            <span
+              >Entre em contato conosco e verifique a disponibilidade para sua
+              região!</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full flex flex-col justify-center items-center">
+        <h1 class="text-[20px] font-bold mb-4">
+          Cadastre-se na nossa
+          <span class="text-blue-600 font-bold">newsletter</span>
+        </h1>
+        <div
+          class="max-w-[1260px] h-[176px] w-full bg-[#dedede] mt-3 mb-10 py-8 px-4 rounded-md flex justify-center items-center"
+        >
+          <form
+            class="w-full max-w-3xl flex items-center gap-4 justify-center flex-nowrap"
+          >
+            <input
+              type="text"
+              placeholder="Digite seu nome"
+              class="flex-1 w-[280px] px-4 py-3 rounded-md border-0"
+            />
+            <input
+              type="email"
+              placeholder="Digite seu e-mail"
+              class="flex-1 w-[280px] px-4 py-3 rounded-md border-0"
+            />
+            <div class="flex items-center gap-2">
+              <input type="checkbox" id="privacy-policy" class="h-4 w-4" />
+              <label for="privacy-policy" class="text-sm w-[296px]">
+                Estou de acordo com a Política de Privacidade
+              </label>
+            </div>
+            <button
+              type="submit"
+              class="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition-colors"
+            >
+              Cadastrar
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
 
     <footer>
       <section
@@ -349,7 +383,7 @@
       >
         <div class="flex gap-28">
           <div>
-            <img src="assets/logos/logo.png" class="w-[152px]" alt="" />
+            <img src="assets/logos/logo.png" class="w-[152px]" alt="Avanti" />
             <div class="flex gap-12 mt-14">
               <i class="fa-brands fa-instagram fa-lg text-[#005CFF]"></i>
               <i class="fa-brands fa-facebook-f fa-lg text-[#005CFF]"></i>
@@ -389,45 +423,37 @@
         <div class="flex gap-8">
           <img
             src="assets/payments/amex.png"
-            class="w-auto object-contain"
-            alt=""
+            class="object-contain"
+            alt="Amex"
           />
           <img
             src="assets/payments/mastercard.png"
-            class="w-auto object-contain"
-            alt=""
+            class="object-contain"
+            alt="Mastercard"
           />
           <img
             src="assets/payments/visa.png"
-            class="w-auto object-contain"
-            alt=""
+            class="object-contain"
+            alt="Visa"
           />
           <img
             src="assets/payments/hipercard.png"
-            class="w-auto object-contain"
-            alt=""
+            class="object-contain"
+            alt="Hipercard"
           />
-          <img
-            src="assets/payments/celo.png"
-            class="w-auto object-contain"
-            alt=""
-          />
+          <img src="assets/payments/celo.png" class="object-contain" alt="" />
           <img
             src="assets/payments/superforma.png"
-            class="w-auto object-contain"
-            alt=""
+            class="object-contain"
+            alt="SuperForma"
           />
           <img
             src="assets/payments/paypal.png"
-            class="w-auto object-contain"
-            alt=""
+            class="object-contain"
+            alt="PayPal"
           />
-          <img
-            src="assets/payments/pix.png"
-            class="w-auto object-contain"
-            alt=""
-          />
-          <img src="assets/payments/boleto.png" alt="" />
+          <img src="assets/payments/pix.png" class="object-contain" alt="Pix" />
+          <img src="assets/payments/boleto.png" alt="Boleto" />
         </div>
       </section>
       <section
@@ -444,11 +470,15 @@
           luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
         </p>
         <div class="flex gap-4 justify-center items-center mt-6">
-          <img src="/assets/logos/certification-group.png" alt="" />
-          <img src="/assets/logos/vtex-pci.png" alt="" />
+          <img src="/assets/logos/certification-group.png" alt="LetsEncriypt" />
+          <img src="/assets/logos/vtex-pci.png" alt="Vtex e PCI" />
           <span class="w-[1px] h-[15px] bg-[#f5f5f5]"></span>
-          <img src="/assets/logos/logo.png" class="w-[57px] h-[10px]" alt="" />
-          <img src="/assets/logos/vtex-logo.png" alt="" />
+          <img
+            src="/assets/logos/logo.png"
+            class="w-[57px] h-[10px]"
+            alt="Avanti"
+          />
+          <img src="/assets/logos/vtex-logo.png" alt="Vtext" />
         </div>
       </section>
     </footer>

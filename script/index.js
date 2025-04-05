@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const slidesData = Array(10).fill({
-    image: "assets/2j0a2073 1 copy.png",
+    image: "assets/products/product-1.jpg",
     title: "Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit",
     oldPrice: "R$ 100.00",
     newPrice: "R$ 79.90",

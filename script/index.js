@@ -62,6 +62,15 @@ document.addEventListener("DOMContentLoaded", function () {
       1024: { slidesPerView: 4 },
       1280: { slidesPerView: 5 },
     },
+    on: {
+      paginationUpdate(swiper) {
+        const bullets = swiper.pagination.bullets;
+        bullets.forEach((bullet, index) => {
+          bullet.style.backgroundColor =
+            index === swiper.activeIndex ? "#303030" : "#838383";
+        });
+      },
+    },
   });
 
   const swiper2 = new Swiper(".another-swiper", {
@@ -81,6 +90,15 @@ document.addEventListener("DOMContentLoaded", function () {
       768: { slidesPerView: 3 },
       1024: { slidesPerView: 4 },
       1280: { slidesPerView: 5 },
+    },
+    on: {
+      paginationUpdate(swiper) {
+        const bullets = swiper.pagination.bullets;
+        bullets.forEach((bullet, index) => {
+          bullet.style.backgroundColor =
+            index === swiper.activeIndex ? "#303030" : "#838383";
+        });
+      },
     },
   });
 });

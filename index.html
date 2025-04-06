@@ -6,6 +6,10 @@
     <title>Avanti - Loja Online</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
@@ -14,18 +18,21 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
   </head>
-  <body class="min-h-screen">
+  <body class="min-h-screen font-nunito">
     <header
-      class="fixed top-0 left-0 w-full z-50 bg-white shadow-md flex flex-col justify-center items-center h-[148px]"
+      class="fixed top-0 left-0 w-full z-50 bg-white shadow-md flex flex-col justify-center items-center h-[170px]"
     >
       <div
-        class="w-full bg-blue-600 text-white text-center py-2 text-sm font-bold"
+        class="w-full bg-blue-600 text-white text-center flex justify-center items-center !h-[90px] text-sm font-bold"
       >
-        Ganhe
-        <span class="bg-purple-700 font-bold px-1 rounded-md">R$10.00</span> de
-        desconto no seu primeiro pedido. Utilize o cupom
-        <span class="font-light">DESCONTO10</span>
+        <span>
+          Ganhe
+          <span class="bg-purple-700 font-bold px-1 rounded-md">R$10.00</span>
+          de desconto no seu primeiro pedido. Utilize o cupom
+          <span class="font-light">DESCONTO10</span>
+        </span>
       </div>
+
       <div class="container mx-auto px-4 py-4 flex w-full">
         <div class="flex items-center w-full">
           <a href="/" class="inline-block">
@@ -69,43 +76,229 @@
         </div>
       </div>
 
-      <nav class="w-full">
-        <div class="container mx-auto px-4">
-          <ul class="flex w-full justify-between pb-4 whitespace-nowrap">
-            <li class="flex items-center font-medium">
-              <i class="fas fa-bars mr-2" aria-hidden="true"></i>
-              <a href="#todas-categorias" class="hover:underline"
-                >Todas as Categorias</a
+      <nav class="w-full bg-white shadow-md relative z-50">
+        <div class="container mx-auto px-4 py-4 flex flex-col w-full relative">
+          <ul class="flex justify-between whitespace-nowrap w-full">
+            <li class="relative group">
+              <div
+                class="hover:underline cursor-pointer flex items-center font-medium px-2 py-1"
               >
+                <i class="fas fa-bars mr-2" aria-hidden="true"></i>
+                <span>Todas as Categorias</span>
+              </div>
+              <div
+                class="absolute top-full w-screen left-1 hidden group-hover:flex z-50 mt-[16px]"
+              >
+                <div class="bg-white w-[78%] flex shadow-lg">
+                  <div class="px-5 py-5 flex">
+                    <div class="flex gap-10 items-start w-full">
+                      <div class="w-64 p-4 bg-[#F5F5F5]">
+                        <ul class="overflow-y-auto">
+                          <li
+                            class="py-1 text-blue-600 font-semibold flex justify-between items-center"
+                          >
+                            <span>Departamento</span
+                            ><i class="fa-solid fa-chevron-right fa-xs"></i>
+                          </li>
+                          <li
+                            class="py-1 hover:text-blue-600 cursor-pointer flex justify-between items-center"
+                          >
+                            <span>Departamento</span
+                            ><i class="fa-solid fa-chevron-right fa-xs"></i>
+                          </li>
+                          <li
+                            class="py-1 hover:text-blue-600 cursor-pointer flex justify-between items-center"
+                          >
+                            <span>Departamento</span
+                            ><i class="fa-solid fa-chevron-right fa-xs"></i>
+                          </li>
+                          <li
+                            class="py-1 hover:text-blue-600 cursor-pointer flex justify-between items-center"
+                          >
+                            <span>Departamento</span
+                            ><i class="fa-solid fa-chevron-right fa-xs"></i>
+                          </li>
+                          <li
+                            class="py-1 hover:text-blue-600 cursor-pointer flex justify-between items-center"
+                          >
+                            <span>Departamento</span
+                            ><i class="fa-solid fa-chevron-right fa-xs"></i>
+                          </li>
+                          <li
+                            class="py-1 hover:text-blue-600 cursor-pointer flex justify-between items-center"
+                          >
+                            <span>Departamento</span
+                            ><i class="fa-solid fa-chevron-right fa-xs"></i>
+                          </li>
+                          <li
+                            class="py-1 hover:text-blue-600 cursor-pointer flex justify-between items-center"
+                          >
+                            <span>Departamento</span
+                            ><i class="fa-solid fa-chevron-right fa-xs"></i>
+                          </li>
+                          <li
+                            class="py-1 hover:text-blue-600 cursor-pointer flex justify-between items-center"
+                          >
+                            <span>Departamento</span
+                            ><i class="fa-solid fa-chevron-right fa-xs"></i>
+                          </li>
+                          <li
+                            class="py-1 hover:text-blue-600 cursor-pointer flex justify-between items-center"
+                          >
+                            <span>Departamento</span
+                            ><i class="fa-solid fa-chevron-right fa-xs"></i>
+                          </li>
+                          <li
+                            class="py-1 hover:text-blue-600 cursor-pointer flex justify-between items-center"
+                          >
+                            <span>Departamento</span
+                            ><i class="fa-solid fa-chevron-right fa-xs"></i>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="w-48 p-4">
+                        <h3 class="font-semibold text-blue-600 mb-2">
+                          Categoria
+                        </h3>
+                        <ul class="flex flex-col gap-2">
+                          <li class="py-1 hover:text-blue-600 cursor-pointer">
+                            Categoria
+                          </li>
+                          <li class="py-1 hover:text-blue-600 cursor-pointer">
+                            Categoria
+                          </li>
+                          <li class="py-1 hover:text-blue-600 cursor-pointer">
+                            Categoria
+                          </li>
+                          <li class="py-1 hover:text-blue-600 cursor-pointer">
+                            Categoria
+                          </li>
+                          <li class="py-1 hover:text-blue-600 cursor-pointer">
+                            Categoria
+                          </li>
+                          <li class="py-1 hover:text-blue-600 cursor-pointer">
+                            Categoria
+                          </li>
+                          <li class="py-1 hover:text-blue-600 cursor-pointer">
+                            Categoria
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="w-48 p-4">
+                        <h3 class="font-semibold text-blue-600 mb-2">
+                          Categoria
+                        </h3>
+                        <ul class="flex flex-col gap-2">
+                          <li class="py-1 hover:text-blue-600 cursor-pointer">
+                            Categoria
+                          </li>
+                          <li class="py-1 hover:text-blue-600 cursor-pointer">
+                            Categoria
+                          </li>
+                          <li class="py-1 hover:text-blue-600 cursor-pointer">
+                            Categoria
+                          </li>
+                          <li class="py-1 hover:text-blue-600 cursor-pointer">
+                            Categoria
+                          </li>
+                          <li class="py-1 hover:text-blue-600 cursor-pointer">
+                            Categoria
+                          </li>
+                          <li class="py-1 hover:text-blue-600 cursor-pointer">
+                            Categoria
+                          </li>
+                          <li class="py-1 hover:text-blue-600 cursor-pointer">
+                            Categoria
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="w-48 p-4">
+                        <h3 class="font-semibold text-blue-600 mb-2">
+                          Categoria
+                        </h3>
+                        <ul class="flex flex-col gap-2">
+                          <li class="py-1 hover:text-blue-600 cursor-pointer">
+                            Categoria
+                          </li>
+                          <li class="py-1 hover:text-blue-600 cursor-pointer">
+                            Categoria
+                          </li>
+                          <li class="py-1 hover:text-blue-600 cursor-pointer">
+                            Categoria
+                          </li>
+                          <li class="py-1 hover:text-blue-600 cursor-pointer">
+                            Categoria
+                          </li>
+                          <li class="py-1 hover:text-blue-600 cursor-pointer">
+                            Categoria
+                          </li>
+                          <li class="py-1 hover:text-blue-600 cursor-pointer">
+                            Categoria
+                          </li>
+                          <li class="py-1 hover:text-blue-600 cursor-pointer">
+                            Categoria
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex justify-end items-center p-7 w-full">
+                    <div class="relative rounded-md overflow-hidden shadow-md">
+                      <img
+                        src="assets/banners/banner-secondary.png"
+                        alt="Banner"
+                        class="object-cover h-[350px]"
+                      />
+                      <div
+                        class="absolute inset-0 bg-black bg-opacity-40 text-white p-4 flex flex-col justify-center"
+                      >
+                        <p
+                          class="leading-[30px] relative left-10 tracking-1 text-[24px] max-w-[127px] flex-wrap whitespace-normal"
+                        >
+                          Confira os Produtos
+                          <span class="font-bold">Que acabaram de chegar</span>
+                        </p>
+                        <button
+                          class="mt-4 relative left-10 font-bold bg-transparent border border-1 rounded-[8px] text-[12px] w-[116px] h-[38px] rounded hover:bg-gray-200 w-32"
+                        >
+                          VER TODOS
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <a class="hover:underline cursor-pointer px-2">Departamento</a>
             </li>
             <li>
-              <a class="hover:underline">Departamento</a>
+              <a class="hover:underline cursor-pointer px-2">Departamento</a>
             </li>
             <li>
-              <a class="hover:underline">Departamento</a>
+              <a class="hover:underline cursor-pointer px-2">Departamento</a>
             </li>
             <li>
-              <a class="hover:underline">Departamento</a>
+              <a class="hover:underline cursor-pointer px-2">Departamento</a>
             </li>
             <li>
-              <a class="hover:underline">Departamento</a>
+              <a class="hover:underline cursor-pointer px-2">Departamento</a>
             </li>
             <li>
-              <a class="hover:underline">Departamento</a>
+              <a class="hover:underline cursor-pointer px-2">Departamento</a>
             </li>
             <li>
-              <a class="hover:underline">Departamento</a>
-            </li>
-            <li>
-              <a class="hover:underline">Departamento</a>
-            </li>
-            <li>
-              <a class="hover:underline">Departamento</a>
+              <a class="hover:underline cursor-pointer px-2">Departamento</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
+
     <main class="pt-[130px]">
       <section class="h-[510px] bg-[#e7e7ea] mt-4">
         <div class="container mx-auto flex flex-row items-center">
@@ -311,7 +504,6 @@
             ></div>
           </div>
 
-          <!-- Botões de navegação -->
           <div
             class="custom-swiper-button-prev-2 absolute left-[-15px] top-1/2 transform -translate-y-1/2 z-10 bg-white w-[30px] h-[30px] flex items-center justify-center rounded-full shadow-md border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-colors duration-500"
           >
@@ -350,7 +542,7 @@
           <span class="text-blue-600 font-bold">newsletter</span>
         </h1>
         <div
-          class="max-w-[1260px] h-[176px] w-full bg-[#dedede] mt-3 mb-10 py-8 px-4 rounded-md flex justify-center items-center"
+          class="max-w-[1260px] h-[176px] w-full bg-[#dedede] mb-10 py-8 px-4 rounded-md flex justify-center items-center"
         >
           <form
             class="w-full max-w-3xl flex items-center gap-4 justify-center flex-nowrap"

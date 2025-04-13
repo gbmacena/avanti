@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     slideElement.innerHTML = `
       <div class="border border-gray-200 rounded-md overflow-hidden h-full flex flex-col">
         <div class="relative flex-grow">
-          <span class="absolute top-2 left-2 bg-[#00264e] text-white text-xs px-1 py-1 rounded max-md:text-[10px] max-md:p-1">
+          <span class="absolute top-2 left-2 bg-[#00264e] text-white text-xs px-1 py-1 rounded max-md:text-[10px] font-semibold max-md:p-1">
             NOVO
           </span>
           <img src="${slide.image}" alt="Produto" class="w-full h-auto" />
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
       320: { slidesPerView: 2 },
       480: { slidesPerView: 3 },
       640: { slidesPerView: 3 },
-      768: { slidesPerView: 3 },
+      768: { slidesPerView: 4 },
       1024: { slidesPerView: 5 },
       1280: { slidesPerView: 5 },
     },

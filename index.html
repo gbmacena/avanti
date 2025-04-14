@@ -33,35 +33,53 @@
         </span>
       </div>
 
-      <div class="container mx-auto px-4 py-4 hidden md:flex w-full">
-        <div class="flex items-center w-full">
-          <a href="/" class="inline-block">
+      <div
+        class="container flex justify-between mx-auto px-4 py-4 hidden md:flex items-center"
+      >
+        <div class="flex w-full">
+          <a href="/" class="mr-4 self-center">
             <img
               src="assets/logos/logo.png"
-              class="w-[150px]"
-              alt="Avanti - Voltar para página inicial"
+              class="w-[150px] h-auto"
+              alt="AVANTI"
             />
           </a>
-          <div class="flex mx-4 w-full">
+
+          <div class="relative w-full max-w-[700px] mx-12 hidden md:block">
             <input
+              id="search-input"
               type="text"
               placeholder="Digite aqui o que você procura"
-              class="w-full max-w-[620px] border border-gray-300 rounded-lg py-2 px-4 pr-10 ml-[70px]"
+              class="w-full border border-gray-300 rounded-lg py-2 px-4 pr-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
-            <i class="fas fa-search relative top-3 right-[40px]"></i>
+            <button
+              id="search-button"
+              class="absolute right-4 top-1/2 transform -translate-y-1/2 hover:text-blue-600"
+            >
+              <i class="fas fa-search"></i>
+            </button>
+            <div
+              id="search-result"
+              class="absolute left-0 top-full w-full bg-white text-sm text-gray-700 shadow-lg rounded-lg p-2 hidden z-[60] flex justify-between items-center"
+            >
+              <p id="search-result-text" class="text-gray-700"></p>
+              <button id="clear-button" class="hover:text-red-600">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
           </div>
         </div>
+
         <div class="flex items-center">
-          <div class="flex items-center">
+          <div class="flex items-center mr-6">
             <img
               src="assets/icons/icon-user.png"
-              class="mr-2 w-[20px] h-[24px]"
-              alt="Pessoa"
+              class="mr-2 w-5 h-6"
+              alt="Usuário"
             />
-            <div class="mr-2">
-              <p class="text-sm leading-tight w-32 font-[600]">
-                Olá,<br />
-                <span>Nome cliente!</span>
+            <div>
+              <p class="text-sm leading-tight font-semibold">
+                Olá, <span class="whitespace-nowrap">Nome cliente!</span>
               </p>
             </div>
           </div>
@@ -107,17 +125,29 @@
             </span>
           </div>
         </div>
-
-        <div class="px-4 pb-3">
-          <div class="relative">
-            <input
-              type="text"
-              placeholder="Digite aqui o que você procura"
-              class="w-full border border-gray-300 rounded-lg py-2 px-4 pr-10"
-            />
-            <i
-              class="fas fa-search absolute right-3 top-1/2 transform -translate-y-1/2"
-            ></i>
+      </div>
+      <div class="px-4 pb-3 hidden w-full max-md:block">
+        <div class="relative w-full">
+          <input
+            id="mobile-search-input"
+            type="text"
+            placeholder="Digite aqui o que você procura"
+            class="w-full border border-gray-300 rounded-lg py-2 px-4 pr-10"
+          />
+          <button
+            id="mobile-search-button"
+            class="absolute right-3 top-1/2 transform -translate-y-1/2 hover:text-blue-600"
+          >
+            <i class="fas fa-search"></i>
+          </button>
+          <div
+            id="mobile-search-result"
+            class="absolute left-0 top-full w-full bg-white text-sm text-gray-700 shadow-lg rounded-lg p-2 hidden z-[60] flex justify-between items-center"
+          >
+            <p id="mobile-search-result-text" class="text-gray-700"></p>
+            <button id="mobile-clear-button" class="hover:text-red-600">
+              <i class="fas fa-times"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -421,24 +451,24 @@
                       </div>
                     </div>
                   </div>
-                  <div class="flex justify-end items-center p-5 w-full">
+                  <div class="flex justify-end items-center p-5 pl-0 w-full">
                     <div class="relative rounded-md overflow-hidden shadow-md">
                       <img
                         src="assets/banners/banner-secondary.png"
                         alt="Banner"
-                        class="object-cover h-[350px]"
+                        class="object-cover w-[326px] h-[350px]"
                       />
                       <div
                         class="absolute inset-0 bg-black bg-opacity-40 text-white p-4 flex flex-col justify-center"
                       >
                         <p
-                          class="leading-[30px] relative left-10 tracking-1 text-[24px] max-w-[127px] flex-wrap whitespace-normal"
+                          class="leading-[30px] relative left-5 tracking-1 text-[24px] max-w-[127px] flex-wrap whitespace-normal max-lg:leading-[20px] max-lg:text-[18px] max-lg:left-4"
                         >
                           Confira os Produtos
                           <span class="font-bold">Que acabaram de chegar</span>
                         </p>
                         <button
-                          class="mt-4 relative left-10 font-bold bg-transparent border border-1 rounded-[8px] text-[12px] w-[116px] h-[38px] rounded hover:bg-gray-200 w-32"
+                          class="mt-4 relative left-5 font-bold bg-transparent border border-1 rounded-[8px] text-[12px] w-[116px] h-[38px] hover:bg-gray-200 max-lg:text-[12px] max-lg:left-4"
                         >
                           VER TODOS
                         </button>

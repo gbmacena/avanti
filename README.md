@@ -1,42 +1,24 @@
-# Avanti - Loja Online
+# 🛍️ Avanti - Loja Online
 
 Este projeto foi desenvolvido como parte do **primeiro desafio do processo seletivo da Avanti**. Ele consiste em uma página web responsiva que simula uma loja online.
 
 ---
 
-## 📦 Acesse o projeto
+## 🌐 Deploy
 
-Clone o repo: git clone: https://github.com/gbmacena/avanti.git
+O projeto está disponível online, você pode acessá-lo através do link abaixo:
 
-OU
-
-Confira no deploy: https://avanti-one.vercel.app/
+🔗 [Clique aqui para acessar o deploy](https://avanti-one.vercel.app/)
 
 ---
 
-## 📋 Descrição do Projeto
+## 📋 Funcionalidades
 
-A página apresenta diversas seções, como:
-
-- **Header**:
-
-  - Barra de aviso promocional.
-  - Barra de navegação com menu responsivo.
-  - Campo de busca para desktop e mobile.
-  - Ícones de usuário e carrinho.
-
-- **Seções Principais**:
-
-  - Banner promocional com destaque para "SUPER SALE".
-  - Carrossel de lançamentos utilizando Swiper.js.
-  - Seções de texto e imagens promocionais.
-  - Formulário de cadastro.
-
-- **Footer**:
-  - Links institucionais e de ajuda.
-  - Informações de contato e redes sociais.
-  - Meios de pagamento aceitos.
-  - Certificações e direitos autorais.
+- ✅ **Carrossel animado** para desktop com transições suaves.
+- ✅ **Carrossel touch screen** exclusivo para dispositivos móveis.
+- ✅ **Pesquisa com resposta de texto dinâmica** via campo de input na navbar.
+- ✅ **Menu com hover interativo** em telas desktop.
+- ✅ **Layout responsivo** com adaptação total entre mobile e desktop.
 
 ---
 
@@ -52,10 +34,31 @@ A página apresenta diversas seções, como:
 
 ## 📸 Capturas de Tela
 
-![Versão desktop](/screenshots/desktop-1.png)
-![Versão desktop](screenshots/desktop-2.png)
+### 🖥️ Versão Desktop
+![Versão desktop](screenshots/desktop-1.png)  
+![Versão desktop](screenshots/desktop-2.png)  
 ![Versão desktop](screenshots/desktop-3.png)
 
-![Versão Mobile](screenshots/mobile-1.png)
-![Versão Mobile](screenshots/mobile-2.png)
-![Versão Mobile](screenshots/mobile-3.png)
+### 📱 Versão Mobile
+<div align="center">
+  <img src="screenshots/mobile-1.png" alt="Versão Mobile 1" width="300px" />
+  <img src="screenshots/mobile-2.png" alt="Versão Mobile 2" width="300px" />
+  <img src="screenshots/mobile-3.png" alt="Versão Mobile 3" width="300px" />
+</div>
+
+---
+
+## 📦 Como Clonar o Repositório
+
+```bash
+git clone https://github.com/gbmacena/avanti.git
+```
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Gabriel Macena**  
+Feito com ❤️ para o processo seletivo da **Avanti**.
+
+[🔗 LinkedIn](https://www.linkedin.com/in/gabriel-macena-871333315/)
+

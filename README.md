@@ -6,7 +6,7 @@ Este projeto foi desenvolvido como parte do **primeiro desafio do processo selet
 
 ## 📦 Acesse o projeto
 
-Clone o repo: https://github.com/gbmacena/avanti.git
+Clone o repo: git clone: https://github.com/gbmacena/avanti.git
 
 OU
 

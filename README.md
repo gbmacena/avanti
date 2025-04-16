@@ -8,7 +8,7 @@ Este projeto foi desenvolvido como parte do **primeiro desafio do processo selet
 
 O projeto está disponível online, você pode acessá-lo através do link abaixo:
 
-🔗 [Clique aqui para acessar o deploy](https://avanti-one.vercel.app/)
+<a href="https://avanti-one.vercel.app/" target="_blank">🔗 Clique aqui para acessar o deploy</a>
 
 ---
 
@@ -60,5 +60,6 @@ git clone https://github.com/gbmacena/avanti.git
 Desenvolvido por **Gabriel Macena**  
 Feito com ❤️ para o processo seletivo da **Avanti**.
 
-[🔗 LinkedIn](https://www.linkedin.com/in/gabriel-macena-871333315/)
+<a href="https://www.linkedin.com/in/gabriel-macena-871333315/" target="_blank">🔗 LinkedIn</a>
+
 

@@ -22,6 +22,7 @@
     <header
       class="fixed top-0 left-0 w-full z-50 bg-white shadow-md flex flex-col justify-center items-center"
     >
+      <!-- Barra de aviso promocional no topo -->
       <div
         class="w-full bg-blue-600 text-white text-center flex justify-center items-center py-3 px-4 max-sm:py-1 max-sm:px-3"
       >
@@ -33,10 +34,12 @@
         </span>
       </div>
 
+      <!-- Conteúdo principal do header para telas médias e maiores -->
       <div
         class="container flex justify-between mx-auto px-4 py-4 hidden md:flex items-center"
       >
         <div class="flex w-full">
+          <!-- Logo -->
           <a href="/" class="mr-4 self-center">
             <img
               src="assets/logos/logo.png"
@@ -45,6 +48,7 @@
             />
           </a>
 
+          <!-- Barra de pesquisa desktop -->
           <div class="relative w-full max-w-[700px] mx-12 hidden md:block">
             <input
               id="search-input"
@@ -58,6 +62,7 @@
             >
               <i class="fas fa-search"></i>
             </button>
+            <!-- Resultado da busca -->
             <div
               id="search-result"
               class="absolute left-0 top-full w-full bg-white text-sm text-gray-700 shadow-lg rounded-lg p-2 hidden z-[60] flex justify-between items-center"
@@ -71,6 +76,7 @@
         </div>
 
         <div class="flex items-center">
+          <!-- Informações do usuário -->
           <div class="flex items-center mr-6">
             <img
               src="assets/icons/icon-user.png"
@@ -83,6 +89,8 @@
               </p>
             </div>
           </div>
+
+          <!-- Ícone do carrinho com contador -->
           <div class="relative">
             <img
               src="assets/icons/icon-cart.png"
@@ -98,6 +106,7 @@
         </div>
       </div>
 
+      <!-- Header mobile -->
       <div class="w-full md:hidden">
         <div class="flex items-center justify-between px-4 py-3">
           <button id="menu-toggle" class="h-16">
@@ -112,6 +121,7 @@
             />
           </a>
 
+          <!-- Ícone do carrinho no mobile -->
           <div class="relative">
             <img
               src="assets/icons/icon-cart.png"
@@ -126,6 +136,8 @@
           </div>
         </div>
       </div>
+
+      <!-- Barra de busca para dispositivos móveis -->
       <div class="px-4 pb-3 hidden w-full max-md:block">
         <div class="relative w-full">
           <input
@@ -140,6 +152,7 @@
           >
             <i class="fas fa-search"></i>
           </button>
+          <!-- Resultado da busca no mobile -->
           <div
             id="mobile-search-result"
             class="absolute left-0 top-full w-full bg-white text-sm text-gray-700 shadow-lg rounded-lg p-2 hidden z-[60] flex justify-between items-center"
@@ -153,9 +166,11 @@
       </div>
 
       <nav class="w-full bg-white shadow-md relative z-50 hidden md:block">
+        <!-- Container principal do menu -->
         <div
           class="container w-full mx-auto px-4 py-4 flex flex-col w-full relative"
         >
+          <!-- Lista de itens do menu principal -->
           <ul
             class="flex text-[14px] justify-between whitespace-nowrap w-full max-lg:text-[11px]"
           >
@@ -166,16 +181,19 @@
                 <i class="fas fa-bars mr-2 max-lg:mb-1" aria-hidden="true"></i>
                 <span>Todas as Categorias</span>
               </div>
+              <!-- Dropdown content -->
               <div
                 class="absolute top-full left-1 hidden group-hover:flex z-50 w-screen pt-[16px] -mt-[16px] pointer-events-none"
               >
                 <div
                   class="bg-white w-[78%] flex relative shadow-lg pointer-events-auto"
                 >
+                  <!-- Conteúdo principal -->
                   <div class="px-5 py-5 flex">
                     <div class="flex gap-10 items-start w-full">
                       <div class="w-64 p-4 bg-[#F5F5F5] max-lg:w-40">
                         <ul class="overflow-y-auto">
+                          <!-- Itens de departamento -->
                           <li
                             class="py-1 hover:text-blue-600 cursor-pointer flex justify-between items-center"
                           >
@@ -232,9 +250,11 @@
                           </li>
                         </ul>
                       </div>
+                      <!-- Colunas de categorias -->
                       <div
                         class="flex w-full gap-15 max-lg:gap-0 justify-between"
                       >
+                        <!-- Coluna 1 -->
                         <div class="p-4 max-lg:p-0 max-lg:pt-4">
                           <h3 class="font-semibold text-blue-600 mb-2">
                             Categoria
@@ -264,6 +284,7 @@
                           </ul>
                         </div>
 
+                        <!-- Coluna 2 -->
                         <div class="p-4 max-lg:p-0 max-lg:pt-4">
                           <h3 class="font-semibold text-blue-600 mb-2">
                             Categoria
@@ -293,6 +314,7 @@
                           </ul>
                         </div>
 
+                        <!-- Coluna 3 -->
                         <div class="p-4 max-lg:p-0 max-lg:pt-4">
                           <h3 class="font-semibold text-blue-600 mb-2">
                             Categoria
@@ -324,6 +346,7 @@
                       </div>
                     </div>
                   </div>
+                  <!-- Banner foto -->
                   <div class="flex justify-end items-center p-5 pl-0 w-full">
                     <div class="relative rounded-md overflow-hidden shadow-md">
                       <img
@@ -352,19 +375,23 @@
               </div>
             </li>
 
+            <!-- Item 2: Departamento (com dropdown) -->
             <li class="relative group">
               <a class="cursor-pointer px-2 hover:text-blue-600 hover:font-bold"
                 >Departamento</a
               >
+              <!-- Dropdown content -->
               <div
                 class="absolute top-full left-1 hidden group-hover:flex z-50 w-screen pt-[16px] -mt-[16px] pointer-events-none"
               >
                 <div
                   class="relative right-[13%] bg-white w-[78%] flex shadow-lg pointer-events-auto"
                 >
+                  <!-- Conteúdo principal -->
                   <div class="px-5 py-5 flex flex-col">
                     <h1 class="font-bold pl-4">Departamento</h1>
                     <div class="flex gap-10 w-full">
+                      <!-- Coluna 1 -->
                       <div class="p-4">
                         <h3 class="font-semibold text-blue-600 mb-2">
                           Categoria
@@ -394,6 +421,7 @@
                         </ul>
                       </div>
 
+                      <!-- Coluna 2 -->
                       <div class="p-4">
                         <h3 class="font-semibold text-blue-600 mb-2">
                           Categoria
@@ -423,6 +451,7 @@
                         </ul>
                       </div>
 
+                      <!-- Coluna 3 -->
                       <div class="p-4">
                         <h3 class="font-semibold text-blue-600 mb-2">
                           Categoria
@@ -453,6 +482,7 @@
                       </div>
                     </div>
                   </div>
+                  <!-- Banner foto (direita) -->
                   <div class="flex justify-end items-center p-5 pl-0 w-full">
                     <div class="relative rounded-md overflow-hidden shadow-md">
                       <img
@@ -481,6 +511,7 @@
               </div>
             </li>
 
+            <!-- Itens simples do menu (sem dropdown) -->
             <li>
               <a class="hover:text-blue-600 hover:font-bold cursor-pointer px-2"
                 >Departamento</a
@@ -515,17 +546,22 @@
         </div>
       </nav>
 
+      <!-- Menu mobile -->
       <div
         id="mobile-menu"
         class="hidden fixed inset-0 bg-white z-50 pt-16 md:hidden overflow-y-auto mobile-menu"
       >
+        <!-- Container principal do menu mobile -->
         <div class="p-4">
           <div class="flex justify-between items-center mb-4">
             <h2 class="font-bold text-lg">Categorias</h2>
+            <!-- Botão para fechar o menu -->
             <button id="close-menu" class="text-gray-700">
               <i class="fas fa-times text-xl"></i>
             </button>
           </div>
+
+          <!-- Lista de departamentos (itens do menu) -->
           <ul class="space-y-4">
             <li class="py-2 border-b">
               <a href="#" class="flex justify-between items-center">
@@ -533,48 +569,56 @@
                 <i class="fa-solid fa-chevron-right fa-xs"></i>
               </a>
             </li>
+
             <li class="py-2 border-b">
               <a href="#" class="flex justify-between items-center">
                 <span>Departamento 2</span>
                 <i class="fa-solid fa-chevron-right fa-xs"></i>
               </a>
             </li>
+
             <li class="py-2 border-b">
               <a href="#" class="flex justify-between items-center">
                 <span>Departamento 3</span>
                 <i class="fa-solid fa-chevron-right fa-xs"></i>
               </a>
             </li>
+
             <li class="py-2 border-b">
               <a href="#" class="flex justify-between items-center">
                 <span>Departamento 4</span>
                 <i class="fa-solid fa-chevron-right fa-xs"></i>
               </a>
             </li>
+
             <li class="py-2 border-b">
               <a href="#" class="flex justify-between items-center">
                 <span>Departamento 5</span>
                 <i class="fa-solid fa-chevron-right fa-xs"></i>
               </a>
             </li>
+
             <li class="py-2 border-b">
               <a href="#" class="flex justify-between items-center">
                 <span>Departamento 6</span>
                 <i class="fa-solid fa-chevron-right fa-xs"></i>
               </a>
             </li>
+
             <li class="py-2 border-b">
               <a href="#" class="flex justify-between items-center">
                 <span>Departamento 7</span>
                 <i class="fa-solid fa-chevron-right fa-xs"></i>
               </a>
             </li>
+
             <li class="py-2 border-b">
               <a href="#" class="flex justify-between items-center">
                 <span>Departamento 8</span>
                 <i class="fa-solid fa-chevron-right fa-xs"></i>
               </a>
             </li>
+
             <li class="py-2 border-b">
               <a href="#" class="flex justify-between items-center">
                 <span>Departamento 9</span>
@@ -585,6 +629,8 @@
         </div>
       </div>
     </header>
+
+    <!-- Seção de banner promocional (Super Sale) -->
     <section
       class="bg-[#e7e7ea] w-full overflow-hidden flex mt-[130px] max-lg:mt-[165px] max-md:mt-[185px] max-sm:mt-[170px]"
     >
@@ -599,9 +645,11 @@
           />
         </div>
 
+        <!-- Container do texto -->
         <div
           class="p-2 flex h-full flex-col right-10 relative justify-center max-lg:w-full max-lg:gap-0 max-sm:right-1"
         >
+          <!-- Título principal -->
           <h2
             class="text-[80px] font-bold max-lg:text-center max-lg:text-[40px] max-sm:text-[32px] max-sm:leading-[36px] max-sm:tracking-normal max-sm:text-center"
           >
@@ -624,6 +672,7 @@
       </div>
     </section>
 
+    <!-- Seção de lançamentos com carrossel -->
     <section class="container mx-auto py-6 md:py-12 px-4 mb-5">
       <div class="flex justify-between items-center mb-4 md:mb-6">
         <h2 class="text-xl md:text-2xl font-bold">Lançamentos</h2>
@@ -634,7 +683,10 @@
           Ver mais
         </a>
       </div>
+
+      <!-- Container do carrossel -->
       <div class="relative">
+        <!-- Carrossel Swiper -->
         <div class="swiper product-swiper">
           <div class="swiper-wrapper" id="swiper-slides-container"></div>
         </div>
@@ -655,6 +707,7 @@
       ></div>
     </section>
 
+    <!-- Seção caneca + texto -->
     <section
       class="flex justify-center max-lg:flex-col w-full max-md:p-0 max-sm:gap-0 max-lg-gap-0 mb-10"
     >
@@ -692,6 +745,7 @@
       </div>
     </section>
 
+    <!-- Seção de imagem + tópicos -->
     <section
       class="w-full bg-[#dedede] mb-10 flex lg:flex-row max-lg:flex-col-reverse justify-center items-center p-10 gap-10 max-sm:p-5 max-sm:gap-5"
     >
@@ -703,6 +757,7 @@
         >
           Lorem ipsum
         </h1>
+        <!-- Container dos itens com ícones -->
         <div
           class="flex flex-col text-[18px] gap-9 max-md:text-[16px] max-sm:text-[14px]"
         >
@@ -768,6 +823,7 @@
       </div>
     </section>
 
+    <!-- Seção caneca + texto 2 -->
     <section
       class="flex justify-center max-lg:flex-col w-full max-md:p-0 max-sm:gap-0 max-lg-gap-0 mb-10"
     >
@@ -805,6 +861,7 @@
       </div>
     </section>
 
+    <!-- Seção de lançamentos com carrossel -->
     <section class="container mx-auto py-6 md:py-12 px-4 mb-5">
       <div class="flex justify-between items-center mb-4 md:mb-6">
         <h2 class="text-xl md:text-2xl font-bold">Lançamentos</h2>
@@ -815,7 +872,9 @@
           Ver mais
         </a>
       </div>
+      <!-- Container principal do carrossel -->
       <div class="relative">
+        <!-- Carrossel Swiper -->
         <div class="swiper another-swiper">
           <div
             class="swiper-wrapper"
@@ -839,6 +898,7 @@
       ></div>
     </section>
 
+    <!-- Banner de contato com sobreposição de texto -->
     <section class="w-full relative mb-10 min-h-[300px]">
       <img
         src="assets/banners/banner-room-avanti.png"
@@ -847,6 +907,7 @@
       />
 
       <div class="absolute inset-0 flex items-center justify-center">
+        <!-- Faixa azul com texto de chamada -->
         <div
           class="h-auto w-full bg-blue-600 text-white text-[20px] flex items-center justify-center text-center px-4 py-6 max-sm:py-2 max-sm:px-2"
         >
@@ -860,14 +921,19 @@
       </div>
     </section>
 
+    <!-- Seção de cadastro -->
     <section class="w-full flex flex-col justify-center items-center">
+      <!-- Título da seção -->
       <h1 class="text-[20px] font-bold mb-4 max-sm:text-[16px]">
         Cadastre-se na nossa
         <span class="text-blue-600 font-bold">newsletter</span>
       </h1>
+
+      <!-- Container do formulário -->
       <div
         class="max-w-[1260px] mx-20 bg-[#dedede] mb-10 py-14 px-32 rounded-md flex justify-center items-center max-md:px-10 max-md:mx-10 max-md:py-10 max-sm:px-5 max-sm:mx-5"
       >
+        <!-- Formulário de cadastro -->
         <form
           class="w-full flex flex-wrap gap-4 items-center justify-center max-sm:flex-col"
         >
@@ -902,13 +968,17 @@
         </form>
       </div>
     </section>
+
+    <!-- Rodapé -->
     <footer>
+      <!-- Seção principal do rodapé -->
       <section
         class="w-full gap-10 flex flex-col justify-center items-center bg-[#F5F5F5] py-10 md:h-[386px]"
       >
         <div
           class="flex flex-col items-start gap-28 md:flex-row max-md:gap-10 max-lg:gap-0 max-md:items-center"
         >
+          <!-- Logo e redes sociais -->
           <div class="flex flex-col pr-10 max-md:items-center max-md:pr-0">
             <img src="assets/logos/logo.png" class="w-[152px]" alt="Avanti" />
             <div class="flex gap-12 mt-10 max-md:gap-10 max-lg:gap-5">
@@ -919,9 +989,11 @@
             </div>
           </div>
 
+          <!-- Links do rodapé -->
           <div
             class="flex flex-col md:flex-row justify-center gap-28 text-[12px] max-lg:gap-10 max-md:mt-5 max-md:gap-0 max-md:w-screen"
           >
+            <!-- Institucional -->
             <div class="max-md:border max-md:border-1">
               <div class="md:hidden">
                 <button
@@ -948,6 +1020,7 @@
               </div>
             </div>
 
+            <!-- Central de Ajuda -->
             <div class="">
               <div class="md:hidden">
                 <button
@@ -975,6 +1048,7 @@
               </div>
             </div>
 
+            <!-- Atendimento -->
             <div class="max-md:border max-md:border-1">
               <div class="md:hidden">
                 <button
@@ -1007,6 +1081,7 @@
           </div>
         </div>
 
+        <!-- Meios de pagamento -->
         <div class="flex flex-wrap justify-center gap-8 max-md:gap-6 mt-0 px-4">
           <img
             src="assets/payments/amex.png"
@@ -1052,6 +1127,7 @@
         </div>
       </section>
 
+      <!-- Seção de direitos autorais e certificações -->
       <section
         class="w-full h-[221px] flex flex-col justify-center items-center"
       >
@@ -1067,6 +1143,7 @@
           vero eros et accumsan et iusto odio dignissim qui blandit praesent
           luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
         </p>
+        <!-- Logos de certificações -->
         <div class="flex gap-4 justify-center items-center mt-6">
           <img src="/assets/logos/certification-group.png" alt="LetsEncriypt" />
           <img src="/assets/logos/vtex-pci.png" alt="Vtex e PCI" />
